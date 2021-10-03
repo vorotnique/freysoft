@@ -1,0 +1,45 @@
+.footer {
+	background-color: $footer-blue;
+	font-size: 14px;
+
+	&__lists {
+		display: flex;
+		justify-content: space-between;
+		width: 45%;
+
+		@include lg-screen-max {
+			width: 57%;
+			flex-direction: row-reverse;
+		}
+	}
+
+	&__wrapper {
+		padding: 30px 0;
+		display: flex;
+		justify-content: space-around;
+
+		@include xl-screen {
+			background-color: $black;
+		}
+	}
+
+	&__copyright {
+		color: $footer-text;
+	}
+
+	&__links {
+		display: flex;
+		width: 280px;
+		justify-content: space-between;
+	}
+
+	&__links-link {
+		color: $footer-text;
+	}
+
+	&__social {
+		display: flex;
+		width: 115px;
+		justify-content: space-between;
+	}
+}

@@ -1,0 +1,44 @@
+@mixin xs-screen {
+	@media only screen and (max-width: 575px) {
+		@content;
+	}
+}
+
+@mixin sm-screen {
+	@media only screen and (min-width: 576px) {
+		@content;
+	}
+}
+
+// tablet
+@mixin md-screen {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin lg-screen {
+	@media only screen and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin lg-screen-max {
+	@media only screen and (max-width: 1199px) {
+		@content;
+	}
+}
+
+// desktop
+@mixin xl-screen {
+	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}
+
+// desktop-hd
+@mixin xxl-screen {
+	@media only screen and (min-width: 1600px) {
+		@content;
+	}
+}

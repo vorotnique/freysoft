@@ -1,0 +1,50 @@
+//colors
+$bg-dark: #020213;
+$white: #fff;
+$black: #000;
+$cyan: #18E8A4;
+$dark-header: #202523;
+$dark-text-about: #545460;
+$background-gray: #D5D4D9;
+$gray-cards-text: #596067;
+$stage1: #EFDCFB;
+$stage2: #CFECFA;
+$background-thesis: #AEA9A8;
+$blue-hr: #d9dde0;
+$bg-dark-vacancies: #001427;
+$text-vacancies: #333;
+$gray-placeholder: #5E636B;
+$text-submit: #073325;
+$text-rules: #828893;
+$footer-blue: #030214;
+$footer-text: #A4AFC1;
+$dots: #e3dfe0;
+
+//fonts
+@font-face {
+	font-family: 'Helvetica Now Display';
+	src: url('../fonts/Display.otf');
+}
+$font-display: 'Helvetica Now Display';
+@font-face {
+	font-family: 'Helvetica Now Display Bold';
+	src: url('../fonts/Display Bold.otf');
+}
+$font-display-bold: 'Helvetica Now Display Bold';
+@font-face {
+	font-family: 'Helvetica Now Display XBold';
+	src: url('../fonts/Display XBold.otf');
+}
+$font-display-xbold: 'Helvetica Now Display XBold';
+@font-face {
+	font-family: 'Helvetica Now Display Black';
+	src: url('../fonts/Display Black.otf');
+}
+$font-display-black: 'Helvetica Now Display Black';
+@font-face {
+	font-family: 'Helvetica Now Display XBlack';
+	src: url('../fonts/Display XBlack.otf');
+}
+$font-display-xblack: 'Helvetica Now Display XBlack';
+
+$transition: all .3s ease;

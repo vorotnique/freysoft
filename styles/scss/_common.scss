@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font-display;
+}
+
+.container {
+	width: 100%;
+	max-width: 1260px;
+	padding: 0 15px;
+	margin: 0 auto;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.section-header {
+	width: 100%;
+	margin-bottom: 50px;
+	color: $dark-header;
+	font-family: $font-display-black;
+	font-size: 32px;
+
+	@include xl-screen {
+		width: 33%;
+		margin: 0;
+		font-size: 62px;
+	}
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+
+	li {
+		border-radius: 50%;
+		background-color: $dots;
+		box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.09), 0px 6px 8px rgba(0, 0, 0, 0.09), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 2px 2px rgba(0, 0, 0, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.09);
+
+		& button::before {
+			display: none;
+		}
+	}
+
+	.slick-active {
+		background-color: $cyan;
+		width: 40px;
+		border-radius: 16px;
+	}
+}
+
+.slick-list {
+	overflow: visible;
+}

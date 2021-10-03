@@ -1,0 +1,308 @@
+.vacancies {
+	background-color: $bg-dark-vacancies;
+
+	&__wrapper {
+
+		@include lg-screen-max {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__search {
+		color: $white;
+		text-align: center;
+		padding: 80px 0;
+		box-shadow: 0px 32px 16px rgba(0, 0, 0, 0.09), 0px 16px 8px rgba(0, 0, 0, 0.09), 0px 8px 4px rgba(0, 0, 0, 0.09), 0px 4px 2px rgba(0, 0, 0, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.09);
+
+		&-header {
+			font-family: $font-display-black;
+			font-size: 32px;
+			margin-bottom: 40px;
+
+			@include xl-screen {
+				font-size: 62px;
+				margin-bottom: 70px;
+			}
+		}
+
+		&-form {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			@include xl-screen {
+				justify-content: space-around;
+			}
+		}
+
+		&-input,
+		&-dropdown {
+			background-color: $bg-dark-vacancies;
+			border: none;
+			border-bottom: 1px solid rgba($white, .3);
+			outline: none;
+			color: rgba($white, .5);
+			height: 45px;
+			width: 100%;
+		}
+
+		&-input {
+
+			@include xl-screen {
+				max-width: 435px;
+			}
+
+			@include lg-screen-max {
+				margin-bottom: 18px;
+			}
+
+			&::placeholder {
+				color: $white;
+				opacity: .5;
+			}
+		}
+
+		&-dropdown {
+			max-width: 312px;
+
+			@include xl-screen {
+				max-width: 280px;
+			}
+		}
+
+		&-button {
+			height: 45px;
+			width: 45px;
+			background: none;
+			border: none;
+			transition: $transition;
+			cursor: pointer;
+
+			& svg {
+				transform: translateX(-30%);
+			}
+		}
+
+	}
+
+	&__list {
+		background: url('../images/bgbig.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 60px 0;
+
+		@include lg-screen-max {
+			background-position: 50%;
+		}
+
+		&-category {
+			margin-bottom: 30px;
+		}
+
+		&-header {
+			text-transform: capitalize;
+			font-family: $font-display-black;
+			font-size: 32px;
+			color: $text-vacancies;
+			margin-bottom: 25px;
+		}
+
+		&-cards {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 23px;
+
+			@include xl-screen {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+
+		&-card {
+			background-color: $white;
+			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.09), 0px 6px 8px rgba(0, 0, 0, 0.09), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 2px 2px rgba(0, 0, 0, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.09);
+			border-radius: 10px;
+		}
+
+		&-link {
+			color: $dark-text-about;
+		}
+
+		&-wrapper {
+			padding: 35px;
+		}
+
+		&-vacancy {
+			font-family: $font-display-xbold;
+			font-size: 24px;
+			margin-bottom: 15px;
+			width: 50%;
+		}
+
+		&-button {
+			display: block;
+			margin: 0 auto;
+			background-color: $cyan;
+			color: $dark-text-about;
+			padding: 30px 160px;
+			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.09), 0px 6px 8px rgba(0, 0, 0, 0.09), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 2px 2px rgba(0, 0, 0, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.09);
+			border-radius: 10px;
+			cursor: pointer;
+			border: none;
+			text-transform: capitalize;
+			font-family: $font-display-xbold;
+			transition: $transition;
+
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+
+	&__app {
+		background: url('../images/bgsmall.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 70px 0;
+
+		&-wrapper {
+			display: flex;
+			justify-content: space-between;
+
+			@include lg-screen-max {
+				flex-direction: column;
+			}
+		}
+
+		&-text {
+			width: 40%;
+
+			@include lg-screen-max {
+				display: flex;
+				width: 100%;
+				margin-bottom: 80px;
+			}
+		}
+
+		&-header {
+			font-family: $font-display-black;
+			font-size: 32px;
+			line-height: 1;
+
+			@include xl-screen {
+				font-size: 62px;
+				margin-bottom: 60px;
+			}
+
+			@include lg-screen-max {
+				width: 50%;
+			}
+		}
+
+		&-info {
+			width: 40%;
+
+			@include xl-screen {
+				font-size: 24px;
+				width: 70%;
+			}
+		}
+
+		&-form {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			justify-content: space-between;
+
+			@include xl-screen {
+				width: 55%;
+			}
+		}
+
+		&-input,
+		&-message {
+			background: none;
+			border: none;
+			border-bottom: 1px solid $black;
+			outline: none;
+			color: $black;
+
+			&::placeholder {
+				color: $gray-placeholder;
+			}
+
+			@include lg-screen-max {
+				height: 40px;
+			}
+		}
+
+		&-input {
+			width: 48%;
+		}
+
+		&-message {
+			width: 100%;
+			margin-bottom: 25px;
+		}
+
+		&-rules {
+			font-size: 12px;
+			color: $text-rules;
+			width: 100%;
+			line-height: 1;
+
+			@include xl-screen {
+				position: absolute;
+				left: 0;
+				bottom: -200%;
+			}
+		}
+
+		&-file {
+			display: none;
+		}
+
+		&-submit {
+			color: $text-submit;
+			background-color: $cyan;
+			padding: 15px 75px;
+			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.09), 0px 6px 8px rgba(0, 0, 0, 0.09), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 2px 2px rgba(0, 0, 0, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.09);
+			border-radius: 10px;
+			cursor: pointer;
+			border: none;
+			text-transform: capitalize;
+			font-family: $font-display-xbold;
+			transition: $transition;
+
+			@include xl-screen {
+				padding: 0 130px;
+			}
+
+			@include lg-screen-max {
+				margin: 0 auto;
+			}
+
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}
+
+.attach {
+	display: flex;
+	height: 90px;
+	line-height: 3;
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+
+	& svg {
+		transform: translateX(-15%);
+	}
+
+	@include xl-screen {
+		margin-bottom: 65px;
+		height: 30px;
+	}
+}
